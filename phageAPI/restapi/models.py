@@ -77,4 +77,5 @@ class OrganismCasPair(models.Model):
         CasProtein, on_delete=models.CASCADE, null=True)
     genomic_start = models.PositiveIntegerField(default=0)
     genomic_end = models.PositiveIntegerField(default=0)
-    evalue = models.PositiveIntegerField(default=0)
+    #evalue = models.PositiveIntegerField(default=0)
+    evalue =  models.PositiveFloatField(default = 0)
